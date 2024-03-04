@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="container">
+
+    <h2 class="my-4 text-center">Замовлення</h2>
+    {% for type, message in get_flashed_messages(True) %}
+    <div class="alert {{type}} my-3 "> {{message}} </div>
+    {% endfor %}
+<div class="row">
+    <form class="col p-3 m-3" action="" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Ім'я та прізвище</label>
+            <input required name="name" type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Адреса</label>
+            <input required name="addres" type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Кількість</label>
+            <input required name="quantity" type="number" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Номер телефону</label>
+            <input required name="phone" type="tel" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Коментар до замовлення</label>
+            <textarea  name="comment" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Замовити</button>
+        
+    </form>
+    <div class="card h-100 dark-card col-12 col-md-4 m-5 p-3 mx-auto" style="max-width: 25rem; max-height: 35rem;">
+        <img src="{{ url_for('static', filename='img/'+product[3]) }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{product[1]}}</h5>
+          <p class="card-text overflow-y-hidden" style ="height: 7rem">{{product[2]}}</p>
+       
+        </div>
+      </div>
+    
+</div>
+</div>
+
+{% endblock content %}

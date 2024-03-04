@@ -1,0 +1,11 @@
+<div class="card h-100 dark-card" style="max-width: 25rem; min-height: 20rem;">
+  <div class="overflow-y-hidden" style="max-height: 200px;">
+    <img   style="min-height: 200px;"  src="{{ url_for('static', filename='img/'+product[3]) }}" class="card-img-top" alt="...">
+  </div>
+    <div class="card-body">
+      <h5 class="card-title">{{product[1]}}</h5>
+      <p class="card-text overflow-y-hidden price" style ="height: 3rem">{{product[2]}}</p>
+      <p class="card-text price  my-3" <b>{{product[4]}} ₴</b></p>
+      <a href= "{{ url_for('order', product_id=product[0]) }}" class="btn btn-outline-light">Замовити</a>
+    </div>
+  </div>

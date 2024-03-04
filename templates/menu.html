@@ -1,0 +1,42 @@
+<!-- <nav class="navbar navbar-expand-lg" data-bs-theme="dark" class = "head_nav">
+    <div class= "container-fluid">
+      <a class="navbar-brand" href="/">Cafe-Pizza</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/order">Замолення</a>
+          </li>
+          {% for category in categories %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('products_by_categories', category_id=category[0]) }}">{{category[1]}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </nav>-->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+    <a href="/" class="navbar-brand d-block d-lg-none">
+        <h1 class="m-0 text-uppercase text-white">
+          <img  style="max-width: 40px; max-height: 40px;" src="/static/img/icon.png" alt=""><i class="fs-1 text-primary me-3"></i>Dough-Cafe</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto mx-lg-auto py-0">
+            <a href="/" class="nav-item nav-link active">Dough-Cafe</a>
+          </li>
+          {% for category in categories %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('products_by_categories', category_id=category[0]) }}">{{category[1]}}</a>
+          </li>
+          {% endfor %}
+            {#<a href="{{ url_for('order') }}" class="nav-item nav-link">Замолення</a>#}
+            <a href="{{ url_for('support') }}" class="nav-item nav-link">Підтримка</a>
+        </div>
+    </div>
+</nav>

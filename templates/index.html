@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div id="carouselExampleCaptions" class="carousel slide mx-auto my-3" style="max-height: 70vh; max-width: 100vh; border-radius: 10px;">
+  <div class="carousel-indicators" >
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner" style="max-height: 70vh; max-width: 100vh;border-radius: 10px;">
+    <div class="carousel-item active">
+      <img src="{{ url_for('static', filename='img/4 (2).jpg') }}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item" style="max-height: 70vh; max-width: 100vh;border-radius: 10px;">
+      <img src="{{ url_for('static', filename='img/2 (2).jpg') }}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item" style="max-height: 70vh; max-width: 100vh;border-radius: 10px;">
+      <img src="{{ url_for('static', filename='img/5.jpg') }}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+<div class = "text-center cel" >
+<h2 class="font-secondary text-center ">About us</h2>
+<p class = "mx-5 font-secondary"><b>Dough-Cafe</b> -  це  приміщення, де шанувальники вишуканого смаку можуть 
+  насолоджуватися вишуканими стравами та напоями, не покидаючи дому. 
+  Наше меню огортає смачність та різноманіття кухні, пропонуючи онлайн-замовлення зі зручністю доставки прямо до вашого порогу.</p>
+  <p class = "mx-5 font-secondary">Наші піци - це справжня симфонія смаку. Виберіть із широкого асортименту варіацій, від класичних до ексклюзивних, щоб знайти вашу улюблену. Кожна наша страва готується з найсвіжіших інгредієнтів та приправлена любов'ю. Доповніть ваше замовлення апетитними салатами, закусками та напоями. Приходьте та насолоджуйтесь найкращою піцою в місті разом з 'Dough-Cafe'!"</p>
+
+
+  <div class="container-fluid py-5">
+    <div class="container">
+        <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+            <h2 class="font-secondary cel ">Team Members </h2>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="team-item">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="static/img/team-1.jpg" alt="">
+                        <div class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                            <div class="d-flex align-items-center justify-content-start">
+                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="https://twitter.com/?lang=uk"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="https://www.facebook.com/?locale=uk_UA"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="https://www.linkedin.com/company/github/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-dark border-inner text-center p-4">
+                        <h4 class="text-uppercase text-primary">Sarah Smith</h4>
+                        <p class="text-white m-0"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="team-item">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="static/img/team-2.jpg" alt="">
+                        <div class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                            <div class="d-flex align-items-center justify-content-start">
+                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="https://twitter.com/?lang=uk"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="https://www.facebook.com/?locale=uk_UA"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="https://www.linkedin.com/company/github/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-dark border-inner text-center p-4">
+                        <h4 class="text-uppercase text-primary">John Brown</h4>
+                        <p class="text-white m-0"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="team-item">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="static/img/team-3.jpg" alt="">
+                        <div class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
+                            <div class="d-flex align-items-center justify-content-start">
+                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="https://twitter.com/?lang=uk"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="https://www.facebook.com/?locale=uk_UA"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="https://www.linkedin.com/company/github/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-dark border-inner text-center p-4">
+                        <h4 class="text-uppercase text-primary">Emily Davis</h4>
+                        <p class="text-white m-0"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div> 
+
+
+<nav class="bds">
+<div class="container contact-in">
+  <div class="contact-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5146.238342597384!2d24.01954774223271!3d49.84021828932481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add1bbc210e35%3A0x446fda883bf8becc!2z0J_Rg9C30LDRgtCwINGF0LDRgtCw!5e0!3m2!1sru!2sua!4v1708286095902!5m2!1sru!2sua" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="contact-form">
+    <h1 style="color: black;">Contact us</h1>
+      <form>
+        <input type="text" placeholder="Name" class="contact-form-txt"/>
+        <input type="text" placeholder="Email" class="contact-form-txt"/>
+        <textarea placeholder="Message" class="contact-form-txtarea"></textarea>
+        <input type="submit" value="Submit" class="contact-form-btn"/>
+      </form>
+
+      
+      
+
+
+  </div>
+</div>
+</nav>
+
+
+
+
+{% endblock content %}
